@@ -14,6 +14,7 @@ RUN apt-get update && \
 	libreadline-dev \
 	libfreetype6-dev \
 	g++ \
+	libxml2-dev \
 	libzip-dev && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
@@ -42,7 +43,8 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
 	gd \
 	mbstring \
 	pdo_mysql \
-	zip && \
+	zip \
+	xml && \
 	rm -rf /tmp/*
 
 # RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
