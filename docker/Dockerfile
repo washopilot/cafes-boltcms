@@ -1,4 +1,4 @@
-FROM php:7.2-apache AS php
+FROM php:7.2-apache-buster AS php
 
 # 1. development packages
 RUN apt-get update && \
