@@ -48,7 +48,8 @@
                 "DEVSENSE.phptools-vscode",
                 "donjayamanne.githistory",
                 "mblode.twig-language-2",
-                "redhat.vscode-yaml"
+                "redhat.vscode-yaml",
+                "RooVeterinaryInc.roo-cline"
             ]
         }
     },
