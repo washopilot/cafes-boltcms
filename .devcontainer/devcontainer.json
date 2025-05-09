@@ -50,7 +50,8 @@
                 "mblode.twig-language-2",
                 "redhat.vscode-yaml",
                 "RooVeterinaryInc.roo-cline",
-                "naumovs.color-highlight"
+                "naumovs.color-highlight",
+                "esbenp.prettier-vscode"
             ]
         }
     },
