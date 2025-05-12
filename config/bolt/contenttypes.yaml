@@ -77,6 +77,43 @@ homepage:
             default:
                 visible: 1
                 content_md: más de **3000 clientes** satisfechos ⭐⭐⭐
+        sections_home:
+            type: collection
+            group: Sections
+            label: Sections
+            fields:
+                section_service:
+                    type: set
+                    label: Section Service
+                    fields:
+                        visible:
+                            type: checkbox
+                            label: Visible
+                            mode: switch
+                        helpful_tip:
+                            type: text
+                            class: d-none
+                            label: "Tip"
+                            postfix: |
+                                Modificar en Auxiliars > Section Service
+                    default:
+                        visible: 1
+                section_features:
+                    type: set
+                    label: Section Features
+                    fields:
+                        visible:
+                            type: checkbox
+                            label: Visible
+                            mode: switch
+                        helpful_tip:
+                            type: text
+                            class: d-none
+                            label: "Tip"
+                            postfix: |
+                                Modificar en Auxiliars > Section Features
+                    default:
+                        visible: 1
         slug:
             type: slug
             uses: title
