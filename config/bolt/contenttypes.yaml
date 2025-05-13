@@ -31,7 +31,7 @@ homepage:
         slider:
             type: collection
             label: Slider
-            group: Slider Principal
+            group: Principal Slider 
             fields:
                 single_slide:
                     type: set
@@ -45,14 +45,14 @@ homepage:
                         title_slide:
                             type: text
                             variant: inline
-                            label: Texto_1
+                            label: Text_Slide
                         subtitle_slide:
                             type: text
                             variant: inline
-                            label: Texto_2
+                            label: Text_Subtitle
                         image_slide:
                             type: image
-                            label: Imagen
+                            label: Image
                             alt: false
                         video_slide:
                             type: file
@@ -60,8 +60,8 @@ homepage:
                             extensions: [mp4]
                     default:
                         visible: 1
-                        title_slide: Texto_1
-                        subtitle_slide: Texto_2
+                        title_slide: Text_1
+                        subtitle_slide: Text_2
         below_slider:
             type: set
             label: Below Slider
@@ -76,7 +76,7 @@ homepage:
                     sanitizing: true
             default:
                 visible: 1
-                content_md: más de **3000 clientes** satisfechos ⭐⭐⭐
+                content_md: more than satisfied **3000 clients** ⭐⭐⭐
         sections_home:
             type: collection
             group: Sections
@@ -95,7 +95,7 @@ homepage:
                             class: d-none
                             label: "Tip"
                             postfix: |
-                                Modificar en Auxiliars > Section Service
+                                Modify in Auxiliars > Section Service
                     default:
                         visible: 1
                 section_features:
@@ -111,7 +111,55 @@ homepage:
                             class: d-none
                             label: "Tip"
                             postfix: |
-                                Modificar en Auxiliars > Section Features
+                                Modify in Auxiliars > Section Features
+                    default:
+                        visible: 1
+                section_products:
+                    type: set
+                    label: Section Products
+                    fields:
+                        visible:
+                            type: checkbox
+                            label: Visible
+                            mode: switch
+                        helpful_tip:
+                            type: text
+                            class: d-none
+                            label: "Tip"
+                            postfix: |
+                                Modify in Auxiliars > Section Products
+                    default:
+                        visible: 1
+                section_ticker:
+                    type: set
+                    label: Section Ticker
+                    fields:
+                        visible:
+                            type: checkbox
+                            label: Visible
+                            mode: switch
+                        helpful_tip:
+                            type: text
+                            class: d-none
+                            label: "Tip"
+                            postfix: |
+                                Modify in Auxiliars > Section Ticker
+                    default:
+                        visible: 1
+                section_grid:
+                    type: set
+                    label: Section Grid
+                    fields:
+                        visible:
+                            type: checkbox
+                            label: Visible
+                            mode: switch
+                        helpful_tip:
+                            type: text
+                            class: d-none
+                            label: "Tip"
+                            postfix: |
+                                Modify in Auxiliars > Section Grid
                     default:
                         visible: 1
         slug:
